@@ -1,6 +1,10 @@
 # R-Studio-Tutorial
 
-Tutorial For R Studio. Tool demo for CS239.
+This is a tutorial for R Studio, a tool demo for UCLA CS 239 Data Science in Software Engineering.
+
+To learn the basic syntax of R, here are some useful resources:
+* http://www.cyclismo.org/tutorial/R/
+* https://www.tutorialspoint.com/r/
 
 ## Installation
 
