@@ -3,6 +3,7 @@
 This is a tutorial for R Studio, a tool demo for UCLA CS 239 Data Science in Software Engineering.
 
 To learn the basic syntax of R, here are some useful resources:
+
 * http://www.cyclismo.org/tutorial/R/
 * https://www.tutorialspoint.com/r/
 
@@ -81,33 +82,33 @@ To access a particular column, Ex. age_husband in our case:
 To access data as a vector:
   `acs[1,3]`
 
-To run some queries on data, you can use the subset function of R. Let's say I want those rows from the dataset in which the age_husband is greater than age_wife. For this we 'll run the following command in console
+To run some queries on data, you can use the subset function of R. Let's say I want those rows from the dataset in which the age_husband is greater than age_wife. For this we 'll run the following command in console:
 
   `a <- subset(acs , age_husband > age_wife)`
 
-The first parameter to the subset function is the dataframe you want to apply that function to and the second parameter is the boolean condition that needs to be checked for each row to be included or not. So the above statement will return the set the rows in which the age_husband is greater than age_wife and assign those rows to *a*
+The first parameter to the subset function is the 'dataframe' you want to apply that function to and the second parameter is the boolean condition that needs to be checked for each row to be included or not. So the above statement will return the set the rows in which the `age_husband` is greater than `age_wife` and assign those rows to `a`.
 
 ### 3. Getting Statistical Averages from data
-Following functions can be used to calculate the averages of the dataset
-1. Mean of any column,  run :  mean(acs$age_husband)
-2. Median, run : median(acs$age_husband)
-3. Quantile , run : quantile(acs$age_wife)
-4. Variance , run : var(acs$age_wife)
-5. Standard Deviation , run : sd(acs$age_wife)
+Following functions can be used to calculate the averages of the dataset:
+
+1. Mean of any column:  `mean(acs$age_husband)`
+2. Median: `median(acs$age_husband)`
+3. Quantile: `quantile(acs$age_wife)`
+4. Variance: `var(acs$age_wife)`
+5. Standard Deviation: `sd(acs$age_wife)`
 
  ![Alt](https://github.com/nicklyz/R-Studio-Tutorial/raw/master/img/7352427_orig.png)
 
-You can also get the statistical summary of the dataset by just running on either a column or the complete dataset
-  `summary(acs)`
+You can also get the statistical summary of the dataset by just running on either a column or the complete dataset: `summary(acs)`
 
 ### 4. Plotting Data
-A very liked feature of R studio is its built in data visualizer for R. Any data set imported in R can visualized using the plot and several other functions of R. For Example:
+A very liked feature of R studio is its built in data visualizer for R. Any data set imported in R can visualized using the plot and several other functions of R.
 
-To create a scatter plot of a data set, you can run the following command in console
+To create a scatter plot of a data set, you can run the following command in console:
 
   `plot(x = s$age_husband , y = s$age_wife, type = 'p')`
 
-Where s is the subset of the original dataset and type 'p' set the plot type as point. You can aslo choose line and other change type variable to 'L' etc.
+where s is the subset of the original dataset and type 'p' set the plot type as point. You can aslo choose line and other change type variable to 'L' etc.
  ![Alt](https://github.com/nicklyz/R-Studio-Tutorial/raw/master/img/8156790_orig.png)
 
 For data distribution plots, there are several features tools and packages available in R that you can use to draw any kind of distribution. For example
